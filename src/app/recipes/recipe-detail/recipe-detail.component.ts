@@ -3,7 +3,6 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
 
 import { Recipe } from '../recipe.model';
 import { RecipeService } from '../recipe.service';
-import {FormArray} from "@angular/forms";
 
 @Component({
   selector: 'app-recipe-detail',
@@ -13,7 +12,6 @@ import {FormArray} from "@angular/forms";
 export class RecipeDetailComponent implements OnInit {
   recipe: Recipe;
   id: number;
-
 
   constructor(private recipeService: RecipeService,
               private route: ActivatedRoute,
